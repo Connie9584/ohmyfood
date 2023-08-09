@@ -22,6 +22,8 @@ header {
 }
 
 
+
+
 div.ohmyfoodlogo {
     display:flex;
     justify-content:center;
@@ -54,6 +56,11 @@ div.ohmyfoodlogo img{
 #ParisTextContainer h2 {
     font-size:medium;
 }
+
+span.LocationIconContainer{
+    padding-right:10px;
+    vertical-align:text-top;
+}
 div.ExploreSection {
     display:flex;
     background:#f2f2f2;
@@ -83,6 +90,7 @@ h2#DiscoverRestaurantsText {
     justify-content:center;
     width:325px;
     text-align:center;
+    font-weight:300;
 }
 
 
@@ -99,7 +107,7 @@ button.ExploreOurRestaurantsButton {
     border:none;
     width:max-content;
     border-radius:20px;
-    padding:10px 20px;
+    padding:12px 22px;
     box-shadow:rgb(184, 184, 184) 0px 4px 8px 0px;
    
 }
@@ -107,37 +115,113 @@ button.ExploreOurRestaurantsButton {
 section.HowItWorksSection {
     display:block;
     padding-bottom:30px;
-
-}
-
-main {
     padding-left:5.5%;
     padding-right:5.5%;
+
+}
+
+h2.HowItWorksHeader  {
+    padding-bottom:30px;
+    padding-top:30px;
+}
+
+div#HowItWorksStepsContainer {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:250px;
+}
+
+div#HowItWorksStepsContainer2 {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+div.IconAndText {
+    background:#f2f2f2;
+    border-radius:20px;
+    padding-top:20px;
+    padding-right:35px;
+    padding-left:15px;
+    padding-bottom:20px;
+    width:100%;
+    
+   
+}
+
+span.NumberCirle {
+    background-color:#9356DC;
+    border-radius:20px;
+    padding-top:5px;
+    padding-right:10px;
+    padding-left:10px;
+    padding-bottom:5px;
+    width:min-content;
+    height:min-content;
+
+}
+
+span.NumberCircleContainer {
+    position:relative;
+    display:flex;
+    justify-content:right;
+    height:min-content;
+
+
+}
+i.fa-solid-fa-mobile-screen-button {
+    
+}
+
+i.fa-solid-fa-list-ul{
+
+}
+
+i.fa-solid-fa-store {
+
 }
 
 
+section.RestaurantsSection {
+    padding-left:5.5%;
+    padding-right:5.5%;
+    background:#f2f2f2;
+
+}
+
+div.RestaurantsHeaderContainer {
+    padding-top:40px;
+    padding-bottom:18px;
+}
 div.RestaurantsGalleryContainer {
     display:flex;
-    justify-content:center;
     flex-direction:column;
+    
 }
 
 div.RestaurantsGallery {
-  width: 100%;
-  height: 200px;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  line-height: 18px;
-  margin-bottom:20px;
-  font-size:13px;
 
+    width: 100%;
+    height: 270px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    display: flex;
 }
+
+div.RestaurantsGallery a {
+    width:100%;
+}
+
 
 div.RestaurantsGallery img{
     width:100%;
-    height:130px;  
+    height:200px;  
     object-fit:cover;
     border-radius: 13px;
     border-bottom-left-radius: 0px;
@@ -149,36 +233,33 @@ div.RestaurantsGalleryTextAndHeartContainer {
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
-    padding:15px;
+    padding-top:0px;
+    padding-bottom:15px;
+    padding-left:15px;
     color:black;
+
 }
 
 div.RestaurantsGalleryTextContainer {
     width:fit-content;
     display:flex;
-    height:50px;
     flex-direction:column;
 }
 
 
 div.HeartIconContainer {
     display:flex;
-    justify-content:right;
-    align-items:center;
-    object-fit: fill;
-    height:50px;
-    padding-top:0px;
+    height:100%;
+    align-items:baseline;
+    
     
 }
 
 
-.fa-regular.fa-heart-fa-stack {
-
-}
-
 i.fa-solid.fa-heart.fa-stack-1x {
     color:transparent;
 }
+
 i.fa-solid.fa-heart.fa-stack-1x:hover {
     background-clip:text;
     background:linear-gradient(#9356DC,#FF79DA );
@@ -245,6 +326,8 @@ div.RestaurantsGallery a {
 footer.Footer {
     background:hsl(0, 0%, 20%);
     color:white;
+    padding-left:5.5%;
+    padding-right:5.5%;
 }
 
 div.ohmyfoodFooter h3 {

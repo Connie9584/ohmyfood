@@ -18,7 +18,7 @@
          <img src="images/logo/ohmyfood.png" alt="ohmyfood logo"></a>
         </div>
         <div id="ParisTextContainer">
-            <h2><i class="fa-solid fa-location-dot"></i>Paris, Bellville</h2>
+            <h2><span class="LocationIconContainer"><i class="fa-solid fa-location-dot"></span></i>Paris, Bellville</h2>
         </div>
     </header>
 
@@ -37,13 +37,15 @@
     <main>
         <section class="HowItWorksSection">
             <h2 class="HowItWorksHeader">How it works</h2>
-            <p><i class="fa-solid fa-mobile-screen-button"></i>1 Choose a restaurant<br>
-               <i class="fa-solid fa-list-ul"></i>2 Create your menu<br>
-               <i class="fa-solid fa-store"></i>3 Go enjoy it at the restaurant
-            </p>
-        </section>
+                <div id="HowItWorksStepsContainer">
+                   <div id="HowItWorksStepsContainer2"><span class="NumberCircleContainer"><span class="NumberCirle">1</span></span><div class="IconAndText"><i class="fa-solid fa-mobile-screen-button"></i>Choose a restaurant</div></div>
+                   <div id="HowItWorksStepsContainer2"><span class="NumberCircleContainer"><span class="NumberCirle">2</span></span><div class="IconAndText"><i class="fa-solid fa-list-ul"></i>Create your menu</div></div>
+                   <div id="HowItWorksStepsContainer2"><span class="NumberCircleContainer"><span class="NumberCirle">3</span></span><div class="IconAndText"><i class="fa-solid fa-store"></i>Go enjoy it at the restaurant</div></div>
+                </div>
+            </section>
     
             <section class="RestaurantsSection">
+                <div class="RestaurantsHeaderContainer"><h1 id="RestaurantsHeaderText>">Restaurants</h1></div>
                 <div class="RestaurantsGalleryContainer">
                     <div class="RestaurantsGallery">
                         <a href="#">
@@ -87,7 +89,10 @@
                                         <p>New York</p>
                                     </div>
                                     <div class="HeartIconContainer">
-                                        <i class="fa-regular fa-heart"></i>
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa-regular fa-heart fa-stack-1x"></i>
+                                            <i class="fa-solid fa-heart fa-stack-1x"></i>
+                                        </span>
                                     </div>
                                 </div>
                                 
@@ -106,7 +111,10 @@
                                     <p>New York</p>
                                 </div>
                                 <div class="HeartIconContainer">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="fa-stack fa-2x">
+                                        <i class="fa-regular fa-heart fa-stack-1x"></i>
+                                        <i class="fa-solid fa-heart fa-stack-1x"></i>
+                                    </span>
                                 </div>
                             </div>
                         </a>
@@ -123,7 +131,10 @@
                                     <p>New York</p>
                                 </div>
                                 <div class="HeartIconContainer">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="fa-stack fa-2x">
+                                        <i class="fa-regular fa-heart fa-stack-1x"></i>
+                                        <i class="fa-solid fa-heart fa-stack-1x"></i>
+                                    </span>
                                 </div>
                             </div>
                         </a>
