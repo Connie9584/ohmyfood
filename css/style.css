@@ -130,12 +130,16 @@ div#HowItWorksStepsContainer {
     flex-direction:column;
     justify-content:space-between;
     height:250px;
+    position: relative;
+   
 }
 
 div#HowItWorksStepsContainer2 {
     display:flex;
     flex-direction:row;
     align-items:center;
+    position: relative;
+  
 }
 
 div.IconAndText {
@@ -146,6 +150,8 @@ div.IconAndText {
     padding-left:15px;
     padding-bottom:20px;
     width:100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
     
    
 }
@@ -159,17 +165,36 @@ span.NumberCirle {
     padding-bottom:5px;
     width:min-content;
     height:min-content;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
 
 }
+
 
 span.NumberCircleContainer {
-    position:relative;
-    display:flex;
-    justify-content:right;
-    height:min-content;
-
+    position:absolute;
+    top:1;
+    left: 0;
+    justify-content:left;
+    height: 100%;
+    width: 3%;
+    align-items: center;
+    background-color: none;  
 
 }
+
+
+.NumberInfront{
+  position: absolute;
+  }
+
+span.IconContainer {
+  padding:15px;
+  color:grey;
+  }
+
 i.fa-solid-fa-mobile-screen-button {
     
 }
@@ -285,11 +310,7 @@ div.HeartIconContainer:after{
 
 }
 
-div#SolidHeart {
-    display:relative;
-    color:green;
 
-}
 
 
 div.RestaurantsGallery a {
