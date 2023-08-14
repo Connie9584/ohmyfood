@@ -195,17 +195,6 @@ span.IconContainer {
   color:grey;
   }
 
-i.fa-solid-fa-mobile-screen-button {
-    
-}
-
-i.fa-solid-fa-list-ul{
-
-}
-
-i.fa-solid-fa-store {
-
-}
 
 
 section.RestaurantsSection {
@@ -344,12 +333,19 @@ div.RestaurantsGallery a {
 
 }
 
+span.FooterIcon {
+    padding-right:0px;
+    width:30px;
+    display:flex;
+}
+
 footer.Footer {
     background:hsl(0, 0%, 20%);
     color:white;
     padding-left:5.5%;
     padding-right:5.5%;
 }
+
 
 div.ohmyfoodFooter h3 {
     font-family:"Shrikhand",sans-serif;
@@ -366,6 +362,151 @@ div.ohmyfoodFooter h3 {
     padding-bottom:40px;
 }
 
+div.FooterInfoContainer {
+    display:flex;
+
+}
 footer.Footer  {
     font-size:13px;
+}
+
+
+
+
+
+section#BackgroundAndMenu {
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    background:#f2f2f2;
+}
+
+div.BackgroundImage {
+    width:100%;
+    height:min-content;
+    position:absolute;
+
+}
+
+div.BackgroundImage img {
+    object-fit:contain;
+    height:min-content;
+    width:100%;
+    padding:0px;
+
+
+}
+
+div.RestaurantMenuTitle {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-bottom:15px;
+
+}
+
+div.RestaurantNameContainer h1 {
+    font-family:"Shrikhand",sans-serif;
+    display:flex;
+}
+
+div.HeartIconContainerMenu {
+    width:min-content;
+    display:flex;
+    align-items:baseline;
+    font-size:25px;
+
+}
+
+div.MenuCourse {
+    padding-bottom:30px;
+    
+}
+
+div.CourseTitle {
+    width:max-content;
+    height:min-content;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    margin-bottom:20px;
+    position:relative;
+
+}
+
+div.CourseTitle::after{
+    content:"";
+    display:block;
+    top:0;
+    bottom:1;
+    width:50%;
+    border-bottom:solid 2px #99E2D0;
+
+}
+div.MenuContainer {
+    background:#f2f2f2;
+    border-radius:20px;
+    padding-top:20px;
+    padding-right:15px;
+    padding-left:15px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    height:max-content;
+    z-index:1;
+    margin-top: 205px;
+
+}
+
+div.MenuContainer h2 {
+    font-size:medium;
+    font-weight:400;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+    
+}
+
+div.MenuItemContainer {
+    background:white;
+    border-radius:15px;
+    margin-bottom:10px;
+    padding-top:10px;
+    padding-right:10px;
+    padding-left:15px;
+    padding-bottom:10px;
+    width:100%;
+    box-shadow: 0 4px 4px 0 rgba(151, 151, 151, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    
+}
+
+div.FoodDescriptionContainer {
+    display:flex;
+    justify-content: space-between;
+}
+
+span.Price {
+    font-weight:700;
+}
+
+.OrderButtonContainer {
+    display:flex;
+    justify-content:center;
+    padding-bottom:70px;
+
+
+}
+
+button.OrderButton {
+    background: linear-gradient(#FF79DA,#9356DC);
+    color:white;
+    border:none;
+    width:170px;
+    border-radius:20px;
+    padding:12px 22px;
+    box-shadow:rgb(184, 184, 184) 0px 4px 8px 0px;
+   
 }
