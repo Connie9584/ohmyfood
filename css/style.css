@@ -24,15 +24,43 @@ header {
 
 
 
+nav {
+    display:flex;
+    position:relative;
+}
+
+button {
+    background:none;
+    border:none;
+    font-size:18px;
+}
+
+#BackArrowContainer {
+    position:absolute;
+    width:100%;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    height:100%;
+    color:black;
+    padding-left: 20px;
+    font-size:17px;
+
+}
+
+
+
 div.ohmyfoodlogo {
     display:flex;
     justify-content:center;
     padding-top:8px;
     padding-bottom:8px;
     box-shadow:10px;
-    
-    
+    position:relative;
+    width:100%;
+       
 }
+
 
 div.ohmyfoodlogo img{
     display:flex;
@@ -373,7 +401,6 @@ footer.Footer  {
 
 
 
-
 section#BackgroundAndMenu {
     position:relative;
     display:flex;
@@ -445,7 +472,7 @@ div.CourseTitle::after{
 }
 div.MenuContainer {
     background:#f2f2f2;
-    border-radius:20px;
+    border-radius:33px;
     padding-top:20px;
     padding-right:15px;
     padding-left:15px;
