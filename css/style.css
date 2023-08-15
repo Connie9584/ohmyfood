@@ -510,6 +510,23 @@ div.MenuItemContainer {
     
 }
 
+div.MenuItemContainer {
+    animation-name: slideinandfadein;
+    animation-duration: 2.5s;
+
+}
+  
+
+@keyframes slideinandfadein {
+    
+    from {opacity:0%; margin-top:9%}
+    to {opacity:100%}
+
+}
+
+
+
+
 div.FoodDescriptionContainer {
     display:flex;
     justify-content: space-between;
