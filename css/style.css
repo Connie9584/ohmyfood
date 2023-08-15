@@ -534,6 +534,26 @@ div.FoodTextContainer {
 
 }
 
+div#TickIconContainer {
+    width:100%;
+    height:100%;
+    justify-content:right;
+    display:flex;
+    position:absolute;
+    align-items:center;
+    color:transparent;
+}
+
+div#TickIconContainer:hover {
+    width:100%;
+    height:100%;
+    justify-content:right;
+    display:flex;
+    position:absolute;
+    align-items:center;
+    color:white;
+}
+
 
 .GreenBlockBtn {
     width:100%;
@@ -546,16 +566,29 @@ div.FoodTextContainer {
 
 .MenuItemContainer:hover {
     background-color: #99E2D0;
+    
 }
 
 .FoodTextContainer:hover {
-    width:80%;
+    width:90%;
     border-radius:15px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     background-color: white;
-    transition:1s;
+    transition:0.5s;
 }
+
+.fa-check-circle:before, .fa-circle-check:before {
+
+    width:100%;
+    height:100%;
+   
+  
+}
+
+
+
+
 
 
 
