@@ -500,19 +500,22 @@ div.MenuItemContainer {
     background:white;
     border-radius:15px;
     margin-bottom:10px;
-    padding-top:10px;
-    padding-right:10px;
-    padding-left:15px;
-    padding-bottom:10px;
+    padding-right:0px;
+    padding-left:0px;
     width:100%;
+    height:70px;
     box-shadow: 0 4px 4px 0 rgba(151, 151, 151, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    position:relative;
+
     
 }
 
 div.MenuItemContainer {
     animation-name: slideinandfadein;
-    animation-duration: 2.5s;
+    animation-duration: 2.8s;
+
 
 }
   
@@ -524,12 +527,69 @@ div.MenuItemContainer {
 
 }
 
+div.FoodTextContainer {
+    width:100%;
 
+}
+
+
+.GreenBlockBtn {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: right;
+}
+
+.GreenBlockBtn:hover {
+    width:100%;
+    display:flex;
+    justify-content: right;
+    background:#99E2D0;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.GreenBlockBtnContainer {
+    position:absolute;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content: right;
+    
+}
+
+.GreenBlockBtnContainer:hover {
+    position:sticky;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    display:flex;
+    width:20%;
+    height:100%;
+    
+}
+
+
+
+
+
+div.FoodTitleContainer {
+    width:fit-content;
+    padding-left:10px;
+    padding-top:10px;
+}
 
 
 div.FoodDescriptionContainer {
     display:flex;
     justify-content: space-between;
+    padding-right:10px;
+    padding-left:10px;
+    padding-bottom:10px;
+    position:relative;
+    width:100%;
+   
 }
 
 span.Price {
