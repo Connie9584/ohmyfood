@@ -543,28 +543,74 @@ div#TickIconContainer {
     align-items:center;
     font-size:20px;
     color:transparent;
-    transform:translateX(0);
-    transition-property:transform;
-    transition-duration:0.5s;
-
 
 }
-
 
 div#TickIconContainer:hover {
-    width:100%;
-    height:100%;
-    justify-content:right;
-    display:flex;
-    align-items:center;
-    position:absolute;
-    color:white;
-    transform:translateX(-20px);
-    transition-property:transform;
-
+animation-name:Translate;
+animation-duration:0.6s;
+animation-fill-mode: forwards;
+animation-play-state: running;
+animation-iteration-count: unset;
 
 }
 
+div#TickIconContainer::after {
+    justify-content:center;
+    }
+
+@keyframes Translate {
+    from {
+        transform:translateX(0);
+    }
+
+    to {
+        transform:translateX(-18.5px);
+    }
+}
+
+
+
+.fa-solid.fa-circle-check{
+    width:100%;
+    height:100%;
+    color:transparent;
+    display:flex;
+    justify-content: right;
+    align-items:center;
+
+}
+
+.fa-solid.fa-circle-check::before{
+animation-direction: running;
+animation-fill-mode: forwards;
+animation-name: Rotate;
+animation-duration:0.6s;
+
+}
+
+
+@keyframes Rotate{
+
+    from {
+    
+        transform: rotate(0); 
+        transform-origin: center center; 
+        transition-property: transform;
+        transition-duration:0.6s;
+        color:white;
+    }
+
+    to {
+    
+        transform:rotate(-720deg);
+        color:white;
+        justify-content:center;
+
+    }
+    
+    }
+    
 
 
 
@@ -591,13 +637,14 @@ div#TickIconContainer:hover {
     transition:0.5s;
 }
 
-.fa-check-circle:before, .fa-circle-check:before {
 
-    width:100%;
-    height:100%;
-   
+
+
+
+
+
   
-}
+
 
 
 
