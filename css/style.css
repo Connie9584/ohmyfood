@@ -12,6 +12,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+
 }
 
 header {
@@ -528,11 +529,16 @@ div.MenuItemContainer {
 }
 
 div.FoodTextContainer {
-    width:100%;
+    width:345.333px;
     background-color: white;
     border-radius:15px;
     display:flex;
     flex-direction:row;
+    justify-content:space-between;
+    text-overflow:ellipsis;
+    padding-bottom:15px;
+
+
 
 }
 
@@ -546,72 +552,88 @@ div#TickIconContainer {
     font-size:28px;
     color:transparent;
 
+
 }
+
+div#TickIconContainer::before {
+    color:transparent;
+
+
+}
+
 
 div#TickIconContainer:hover {
-animation-name:Translate;
-animation-duration:0.75s;
+animation-name:TranslateandRotate;
+animation-duration:1s;
 animation-fill-mode: forwards;
-
-
-
 
 }
 
-div#TickIconContainer::after {
-    justify-content:center;
-    color:blue;
-    }
 
-@keyframes Translate {
+@keyframes TranslateandRotate {
     from {
-        transform:translateX(0);
+        transform:translateX(0); rotate(-180deg); 
+        transition-duration:2.4s;     
+        color:white;  
+        
     }
 
     to {
-        transform:translateX(-4.9%);
+        transform:translateX(-4.9%); rotate(360deg);
+        color:white;
+        
     }
 }
 
 
 
 .fa-solid.fa-circle-check{
-    width:100%;
-    height:100%;
-    color:transparent;
+    width:28px;
+    height:28px;
     display:flex;
     justify-content: right;
     align-items:center;
-    color:transparent;
-
-
+    
+       
 }
 
 .fa-solid.fa-circle-check::before{
-animation-direction: running;
-animation-fill-mode: forwards;
-animation-name: Rotate;
-animation-duration:2.6s;
+    width:28px;
+    height:28px;
+    display:flex;
+    justify-content: right;
+    align-items:center;
 
+       
 }
 
+.fa-solid.fa-circle-check:hover{
+   color:white;
+     
+}
+
+
+
+    
 
 @keyframes Rotate{
 
     from {
     
         transform: rotate(-180deg); 
-        transform-origin: center center; 
         transition-property: transform;
         transition-duration:2.4s;
-        color:white;
+     
     }
 
     to {
     
         transform:rotate(360deg);
         color:white;
-        justify-content:center;
+        
+       
+        
+      
 
     }
     
@@ -649,37 +671,21 @@ animation-duration:2.6s;
 
 
 
-  
-
-
-
-
-
-
-
-
 
 
 
 div.FoodTitleAndDescriptionContainer {
-    width:100%;
+    width:280px;
     padding-left:10px;
     padding-top:10px;
     display:flex;
     flex-direction:column;
+    justify-content:flex-end;
+
 }
 
 
-div.FoodDescriptionContainer {
-    display:flex;
-    justify-content: space-between;
-    padding-right:10px;
-    padding-left:10px;
-    padding-bottom:10px;
-    position:relative;
-    width:100%;
-   
-}
+
 
 div.PriceContainer {
     font-weight:700;
@@ -688,9 +694,11 @@ div.PriceContainer {
     flex-direction:column;
     justify-content:flex-end;
     align-items:flex-end;
-    width:min-content;
-    padding-bottom:20px;
-    padding-right:30px;
+    width:27.542px;
+    padding-right:20px;
+    
+
+  
 }
 
 
