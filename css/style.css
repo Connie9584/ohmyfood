@@ -543,7 +543,7 @@ div#TickIconContainer {
     display:flex;
     position:absolute;
     align-items:center;
-    font-size:20px;
+    font-size:28px;
     color:transparent;
 
 }
@@ -569,7 +569,7 @@ div#TickIconContainer::after {
     }
 
     to {
-        transform:translateX(-18.5px);
+        transform:translateX(-4.9%);
     }
 }
 
@@ -582,6 +582,8 @@ div#TickIconContainer::after {
     display:flex;
     justify-content: right;
     align-items:center;
+    color:transparent;
+
 
 }
 
@@ -633,7 +635,7 @@ animation-duration:2.6s;
 }
 
 .FoodTextContainer:hover {
-    width:90%;
+    width:82%;
     border-radius:15px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -685,10 +687,10 @@ div.PriceContainer {
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
-    align-items:baseline;
+    align-items:flex-end;
     width:min-content;
-    padding-bottom:10px;
-    padding-right:10px;
+    padding-bottom:20px;
+    padding-right:30px;
 }
 
 
