@@ -430,20 +430,23 @@ div.RestaurantMenuTitle {
     flex-direction:row;
     justify-content: space-between;
     padding-bottom:0px;
+    padding-top:15px;
 
 }
 
 div.RestaurantNameContainer h1 {
     font-family:"Shrikhand",sans-serif;
     display:flex;
+    font-size: 25px;
+    padding-bottom: 0;
 }
 
 div.HeartIconContainerMenu {
     width:min-content;
     display:flex;
-    align-items:baseline;
+    align-items:center;
     font-size:27px;
-    padding-bottom:10px;
+    padding-bottom:0px;
     padding-right:20px;
 
 }
