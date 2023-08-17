@@ -529,7 +529,7 @@ div.MenuItemContainer {
     padding-right:0px;
     padding-left:0px;
     width:100%;
-    height:70px;
+    height:fit-content;
     box-shadow: 0 4px 4px 0 rgba(151, 151, 151, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: row;
@@ -554,7 +554,7 @@ div.MenuItemContainer {
 }
 
 div.FoodTextContainer {
-    width:95%;
+    width:92%;
     height:100%;
     background-color: white;
     border-radius:15px;
@@ -566,9 +566,9 @@ div.FoodTextContainer {
     overflow-x:clip;
     white-space:nowrap;
 
-
-
 }
+
+
 
 div.FoodTextContainer:hover{
     width:80%;
@@ -710,11 +710,6 @@ div#TickIconContainer:hover .fa-solid.fa-circle-check {
 
 
 
-
-
-
-
-
 div.FoodTitleAndDescriptionContainer {
     width:82%;
     padding-left:10px;
@@ -727,22 +722,31 @@ div.FoodTitleAndDescriptionContainer {
 
 }
 
+div.FoodTitleContainer  {
+
+    white-space:wrap;
+}
 
 
 
-div.PriceContainer {
+
+div.Price {
     font-weight:700;
     height:100%;
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
     align-items:flex-end;
-    width:27.542px;
-    padding-right:20px;
+    width:20%;
+    padding-right:15px;
     
-
-  
 }
+
+div.PriceContainer {
+    width:10px;
+}
+
+
 
 
 
