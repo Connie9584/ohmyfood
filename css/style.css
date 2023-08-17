@@ -395,7 +395,7 @@ div.ohmyfoodFooter h3 {
     padding-bottom:20px;
 }
 
-.FooterPTextContainer {
+div.FooterPTextContainer {
     height:150px;
     display:flex;
     flex-direction:column;
@@ -406,6 +406,11 @@ div.ohmyfoodFooter h3 {
 div.FooterInfoContainer {
     display:flex;
 
+}
+
+div.FooterPTextContainer a {
+    color:white;
+    text-decoration:none;
 }
 footer.Footer  {
     font-size:13px;
@@ -525,7 +530,7 @@ div.MenuContainer h2 {
 div.MenuItemContainer {
     background:white;
     border-radius:15px;
-    margin-bottom:10px;
+    margin-bottom:13px;
     padding-right:0px;
     padding-left:0px;
     width:100%;
@@ -534,8 +539,6 @@ div.MenuItemContainer {
     display: flex;
     flex-direction: row;
     position:relative;
-
-    
 }
 
 div.MenuItemContainer {
@@ -767,4 +770,9 @@ button.OrderButton {
     padding:12px 22px;
     box-shadow:rgb(184, 184, 184) 0px 4px 8px 0px;
    
+}
+
+button.OrderButton:hover {
+    background: linear-gradient(#ff7fdb,#af71fb);
+    box-shadow:rgb(160, 160, 160) 0px 4px 8px 0px;
 }
