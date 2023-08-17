@@ -204,8 +204,8 @@ span.NumberCirle {
 
 span.NumberCircleContainer {
     position:absolute;
-    top:1;
-    left: 0;
+    top:15px;
+    left: -10px;
     justify-content:left;
     height: 100%;
     width: 3%;
@@ -529,7 +529,8 @@ div.MenuItemContainer {
 }
 
 div.FoodTextContainer {
-    width:345.333px;
+    width:95%;
+    height:100%;
     background-color: white;
     border-radius:15px;
     display:flex;
@@ -537,9 +538,15 @@ div.FoodTextContainer {
     justify-content:space-between;
     text-overflow:ellipsis;
     padding-bottom:15px;
+    overflow-x:clip;
+    white-space:nowrap;
 
 
 
+}
+
+div.FoodTextContainer:hover{
+    width:80%;
 }
 
 div#TickIconContainer {
@@ -563,23 +570,23 @@ div#TickIconContainer::before {
 
 
 div#TickIconContainer:hover {
-animation-name:TranslateandRotate;
+animation-name:Translate;
 animation-duration:1s;
 animation-fill-mode: forwards;
 
 }
 
 
-@keyframes TranslateandRotate {
+@keyframes Translate {
     from {
-        transform:translateX(0); rotate(-180deg); 
+        transform:translateX(0); 
         transition-duration:2.4s;     
         color:white;  
         
     }
 
     to {
-        transform:translateX(-4.9%); rotate(360deg);
+        transform:translateX(-5.7%);
         color:white;
         
     }
@@ -614,13 +621,19 @@ animation-fill-mode: forwards;
 
 
 
+div#TickIconContainer:hover .fa-solid.fa-circle-check {
+    animation-name:Rotate;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    
+    }
     
 
 @keyframes Rotate{
 
     from {
     
-        transform: rotate(-180deg); 
+        transform: rotate(0deg); 
         transition-property: transform;
         transition-duration:2.4s;
      
@@ -665,6 +678,9 @@ animation-fill-mode: forwards;
     transition:0.5s;
 }
 
+.FoodTextContainer:hover div.FoodTitleAndDescriptionContainer{
+    width:70%;
+}
 
 
 
@@ -675,12 +691,14 @@ animation-fill-mode: forwards;
 
 
 div.FoodTitleAndDescriptionContainer {
-    width:280px;
+    width:82%;
     padding-left:10px;
     padding-top:10px;
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
+    text-overflow:ellipsis;
+
 
 }
 
