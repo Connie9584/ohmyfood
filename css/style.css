@@ -442,7 +442,9 @@ div.HeartIconContainerMenu {
     width:min-content;
     display:flex;
     align-items:baseline;
-    font-size:25px;
+    font-size:27px;
+    padding-bottom:10px;
+    padding-right:20px;
 
 }
 
@@ -469,9 +471,7 @@ div.CourseTitle::after{
     top:0;
     bottom:1;
     width:50%;
-    border-bottom:solid 2.3px #99E2D0;
-    padding-bottom:3px;
-
+    border-bottom:solid 2px #99E2D0;
 
 }
 div.MenuContainer {
