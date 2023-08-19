@@ -720,15 +720,26 @@ div.FoodTitleAndDescriptionContainer {
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
-    text-overflow:ellipsis;
+
+    
 
 
 }
 
 div.FoodTitleContainer  {
+    overflow-x:hidden;
 
-    white-space:wrap;
+    text-overflow:clip;
+    white-space:nowrap;
 }
+
+div.FoodDescriptionContainer {
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow-x:hidden;
+
+}
+
 
 
 
