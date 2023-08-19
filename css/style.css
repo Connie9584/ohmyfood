@@ -527,6 +527,8 @@ div.MenuContainer h2 {
     
 }
 
+
+
 div.MenuItemContainer {
     background:white;
     border-radius:15px;
@@ -566,8 +568,7 @@ div.FoodTextContainer {
     justify-content:space-between;
     text-overflow:ellipsis;
     padding-bottom:15px;
-    overflow-x:clip;
-    white-space:nowrap;
+   
 
 }
 
@@ -575,6 +576,7 @@ div.FoodTextContainer {
 
 div.FoodTextContainer:hover{
     width:80%;
+    
 }
 
 div#TickIconContainer {
@@ -720,21 +722,39 @@ div.FoodTitleAndDescriptionContainer {
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
+    overflow-x:clip;
+    white-space:nowrap;
+    text-overflow:ellipsis;
 
     
 
 
 }
 
+div.FoodTitleAndDescriptionContainer:hover {
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow-x:hidden;
+}
+
 div.FoodTitleContainer  {
     overflow-x:hidden;
+    white-space:wrap;
+    text-overflow:ellipsis;
 
-    text-overflow:clip;
+  
+}
+
+div.FoodTitleContainer:hover  {
+    text-overflow:ellipsis;
+    overflow:hidden;
     white-space:nowrap;
+
+
 }
 
 div.FoodDescriptionContainer {
-    white-space:nowrap;
+    
     text-overflow:ellipsis;
     overflow-x:hidden;
 
