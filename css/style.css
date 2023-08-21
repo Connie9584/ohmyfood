@@ -127,7 +127,7 @@ h2#DiscoverRestaurantsText {
 .ExploreButtonContainer {
     display:flex;
     justify-content:center;
-
+  
 }
 
 button.ExploreOurRestaurantsButton {
@@ -139,6 +139,11 @@ button.ExploreOurRestaurantsButton {
     padding:12px 22px;
     box-shadow:rgb(184, 184, 184) 0px 4px 8px 0px;
    
+}
+
+button.ExploreOurRestaurantsButton:hover {
+    background: linear-gradient(#ff7fdb,#af71fb);
+    box-shadow:rgb(160, 160, 160) 0px 4px 8px 0px;
 }
 
 section.HowItWorksSection {
