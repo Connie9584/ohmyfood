@@ -807,3 +807,46 @@ button.OrderButton:hover {
     background: linear-gradient(#ff7fdb,#af71fb);
     box-shadow:rgb(160, 160, 160) 0px 4px 8px 0px;
 }
+
+div.Loader {
+    position:fixed;
+    z-index:2;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(128, 128, 128, 0.861);
+    transition-property: opacity;
+    transition-duration:0.9s;
+    visibility:visible;
+    overflow:show;
+    
+
+}
+
+
+
+
+.Loader::after {
+    content:"";
+    width:75px;
+    height:75px;
+    border:15px solid white;
+    border-top-color:#027153;
+    border-radius:50%;
+    animation-name:Loading;
+    animation-duration:0.9s;
+    animation-iteration-count:3;
+    animation-timing-function: ease;
+
+}
+
+
+
+@keyframes Loading {
+    from {transform:rotate(0turn)}
+    to {transform:rotate(1turn);}
+}
