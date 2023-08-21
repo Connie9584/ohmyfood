@@ -255,6 +255,7 @@ div.RestaurantsGallery {
     margin-bottom: 20px;
     font-size: 13px;
     display: flex;
+    flex-direction:column;
 }
 
 div.RestaurantsGallery a {
@@ -294,6 +295,7 @@ div.HeartIconContainer {
     display:flex;
     height:100%;
     align-items:baseline;
+    
     
     
 }
@@ -821,7 +823,7 @@ div.Loader {
     background:rgba(128, 128, 128, 0.861);
     transition-property: opacity;
     transition-duration:0.9s;
-    visibility:visible;
+    visibility:hidden;
     overflow:show;
     
 
