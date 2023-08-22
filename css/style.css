@@ -972,6 +972,9 @@ i.fa-solid.fa-arrow-left {
     
 }
 
-
+div.MenuContainer {
+    padding-left:4%;
+    padding-right:4%;
+}
 
 }
