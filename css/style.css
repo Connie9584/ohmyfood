@@ -857,3 +857,111 @@ div.Loader {
     from {transform:rotate(0turn)}
     to {transform:rotate(1turn);}
 }
+
+
+@media screen and (min-width:768px) {
+
+div.ohmyfoodlogo {
+    display:flex;
+    justify-content:left;
+    padding-left:4%;
+    padding-top:20px;
+    padding-bottom:20px;
+    box-shadow:0px;
+    position:relative;
+    width:100%;
+
+       
+}
+
+div.ohmyfoodlogo img{
+    display:flex;
+    width:220.5px;
+    height:38.25px;
+
+}
+
+
+h2.HowItWorksHeader  {
+    padding-bottom:30px;
+    padding-top:30px;
+} 
+
+div#HowItWorksStepsContainer {
+    flex-direction:row;
+    height:min-content;
+    
+}
+
+div.IconAndText {
+    width:300px;
+}
+
+
+div#HowItWorksStepsContainer2 {
+    align-items:unset;
+    position: relative;
+
+  
+}
+
+section.RestaurantsSection {
+    border-radius:30px;
+    padding-left:40px;
+    padding-right:20px;
+    padding-bottom:60px;
+    margin-bottom:50px;
+
+
+}
+
+div.RestaurantsGalleryTextAndHeartContainer {
+    width:100%;
+    font-size:16px;
+}
+
+div.RestaurantsGalleryContainer {
+    flex-direction:row;
+    justify-content:space-between;
+ 
+}
+
+div.RestaurantsGallery {
+    width:250px;
+    height:300px;
+    position:sticky;
+    margin-right:20px;
+
+
+    
+}
+
+main {
+    padding-left:4%;
+    padding-right:4%;
+}
+
+div.ExploreSection {
+
+    padding-bottom:30px;
+
+}
+
+div.FooterPTextContainer {
+    height:100px;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    width:700px;
+    flex-wrap:wrap;
+
+
+
+}
+
+div.FooterInfoContainer {
+    width:250px;
+    
+}
+
+}
