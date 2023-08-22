@@ -955,13 +955,23 @@ div.FooterPTextContainer {
     width:700px;
     flex-wrap:wrap;
 
-
-
 }
 
 div.FooterInfoContainer {
     width:250px;
     
 }
+
+
+div#BackArrowContainer {
+    width:300px;
+}
+
+i.fa-solid.fa-arrow-left {
+    display:none;
+    
+}
+
+
 
 }
