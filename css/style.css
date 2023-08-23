@@ -940,7 +940,7 @@ h2.HowItWorksHeader  {
     padding-top:30px;
 } 
 
-div#HowItWorksStepsContainer {
+div.HowItWorksStepsContainer {
     flex-direction:row;
     height:min-content;
     
@@ -948,12 +948,14 @@ div#HowItWorksStepsContainer {
 
 div.IconAndText {
     width:300px;
+    margin-right:15px;
 }
 
 
 div#HowItWorksStepsContainer2 {
     align-items:unset;
     position: relative;
+
 
   
 }
@@ -1123,5 +1125,7 @@ button.OrderButton {
    font-size:18px;
 }
 
-
+div.CourseTitle::after {
+    margin-bottom:18px;
+}
 }
