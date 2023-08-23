@@ -60,7 +60,7 @@ div.ohmyfoodlogoContainer {
     display:flex;
     justify-content:center;
     padding-top:0px;
-    box-shadow:10px;
+    box-shadow:10px 0px;
     position:relative;
     width:100%;
        
@@ -71,7 +71,7 @@ div.ohmyfoodlogoHomeContainer {
     padding-bottom:8px;
     display:flex;
     justify-content:center;
-    box-shadow:10px;
+    box-shadow:10px 0px;
     position:relative;
     width:100%;
     
@@ -183,7 +183,7 @@ h2.HowItWorksHeader  {
     padding-top:30px;
 }
 
-div#HowItWorksStepsContainer {
+div.HowItWorksStepsContainer {
     display:flex;
     flex-direction:column;
     justify-content:space-between;
@@ -192,7 +192,7 @@ div#HowItWorksStepsContainer {
    
 }
 
-div#HowItWorksStepsContainer2 {
+div.HowItWorksStepsContainer2 {
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -200,8 +200,9 @@ div#HowItWorksStepsContainer2 {
   
 }
 
+
 div.IconAndText {
-    background:#f2f2f2;
+    background:hsl(0, 0%, 95%);
     border-radius:20px;
     padding-top:20px;
     padding-right:35px;
@@ -214,19 +215,31 @@ div.IconAndText {
    
 }
 
+div.IconAndText:hover {
+    background-color:hsl(271, 51%, 92%);
+
+}
+
+div.IconAndText:hover .IconContainer {
+    color:#9356DC;
+}
+
+
 span.NumberCirle {
     background-color:#9356DC;
     border-radius:20px;
-    padding-top:5px;
+    padding-top:8px;
     padding-right:10px;
     padding-left:10px;
-    padding-bottom:5px;
+    padding-bottom:8px;
     width:min-content;
     height:min-content;
     position: absolute;
     display: flex;
     justify-content: flex-end;
     align-items:center;
+    color:white;
+    font-size:13px;
 
 }
 
@@ -239,19 +252,23 @@ span.NumberCircleContainer {
     height: 100%;
     width: 3%;
     align-items: center;
-    background-color: none;  
+    background: none;  
 
 }
 
 
 .NumberInfront{
   position: absolute;
-  }
+
+}
 
 span.IconContainer {
   padding:15px;
   color:grey;
-  }
+
+}
+
+  
 
 
 
@@ -348,7 +365,7 @@ i.fa-solid.fa-heart.fa-stack-1x:hover {
     background:linear-gradient(#9356DC,#FF79DA );
     background:-moz-linear-gradient(top, #9356DC 100%,#FF79DA 0%);
     background:-webkit-linear-gradient(top, #9356DC 0%,#FF79DA 100%);
-    background: linear-gradient( bottom,#9356DC 0%,#FF79DA 100%);
+    background: linear-gradient(#9356DC 0%,#FF79DA 100%);
     -webkit-background-clip:text;
     -moz-background-clip:text;
     -webkit-text-fill-color:transparent;
@@ -362,7 +379,7 @@ div.HeartIconContainer:after{
     background-clip:text;
     background:-moz-linear-gradient(top, #9356DC 100%,#FF79DA 0%);
     background:-webkit-linear-gradient(top, #9356DC 0%,#FF79DA 100%);
-    background: linear-gradient( bottom,#9356DC 0%,#FF79DA 100%);
+    background: linear-gradient(#9356DC 0%,#FF79DA 100%);
     -webkit-background-clip:text;
     -moz-background-clip:text;
     -webkit-text-fill-color:transparent;
@@ -401,7 +418,10 @@ div.RestaurantsGallery a {
     border:none;
     border-radius:2px;
     box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    font-size:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
 }
 
@@ -526,7 +546,7 @@ div.CourseTitle::after{
     content:"";
     display:block;
     top:0;
-    bottom:1;
+    bottom:1px;
     width:50%;
     border-bottom:solid 2px #99E2D0;
 
@@ -770,7 +790,6 @@ div.FoodTitleAndDescriptionContainer:hover {
 
 div.FoodTitleContainer  {
     overflow-x:hidden;
-    white-space:wrap;
     text-overflow:ellipsis;
 
   
@@ -851,7 +870,7 @@ div.Loader {
     justify-content:center;
     background:rgba(128, 128, 128, 0.861);
     visibility:hidden;
-    overflow:show;
+    overflow:visible;
     opacity:0;
     animation-name:FadeOut;
     animation-duration:2s;
@@ -893,26 +912,30 @@ div.Loader {
 
 @media screen and (min-width:768px) {
 
-div.ohmyfoodlogo {
+div.ohmyfoodlogoContainer {
     display:flex;
-    justify-content:left;
+    justify-content:center;
     padding-left:4%;
     padding-top:20px;
     padding-bottom:20px;
-    box-shadow:0px;
+    box-shadow:0px 0px;
     position:relative;
     width:100%;
 
        
 }
 
-div.ohmyfoodlogo img{
+div.ohmyfoodlogoContainer img{
     display:flex;
     width:220.5px;
     height:38.25px;
 
 }
 
+div.ohmyfoodlogoContainer a {
+    z-index:3;
+    position:relative;
+}
 
 h2.HowItWorksHeader  {
     padding-bottom:30px;
@@ -936,6 +959,8 @@ div#HowItWorksStepsContainer2 {
 
   
 }
+
+
 
 section.RestaurantsSection {
     border-radius:30px;
@@ -997,10 +1022,12 @@ div.FooterInfoContainer {
 
 div#BackArrowContainer {
     width:300px;
+    
 }
 
 i.fa-solid.fa-arrow-left {
-    width:300px;
+    font-size:30px;
+    display:none;
     
 }
 
