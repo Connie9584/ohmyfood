@@ -725,9 +725,6 @@ div#TickIconContainer:hover .fa-solid.fa-circle-check {
         transform:rotate(360deg);
         color:white;
         
-       
-        
-      
 
     }
     
@@ -747,6 +744,7 @@ div#TickIconContainer:hover .fa-solid.fa-circle-check {
 
 .MenuItemContainer:hover {
     background-color: #99E2D0;
+    height:100%;
     
 }
 
@@ -1031,25 +1029,99 @@ i.fa-solid.fa-arrow-left {
     
 }
 
-div.MenuContainer {
-    padding-left:4%;
-    padding-right:4%;
-    width:80%;
-     
+
+
+
+
+div.BackgroundImage {
+    position:unset;
+    margin:0px;
+    padding-bottom:0px;
+    height:300px;
+
+    
+    
 }
 
+div.BackgroundImage img {
+    height:300px;
+    object-fit:cover;
+    margin:0px;
+    padding:0px;
+
+}
 
 section#BackgroundAndMenu {
     align-items:center;
     flex-direction:column;
-    background-color: white;
-    padding-bottom:50px;
-    
+    background:white;
+
 }
 
-div.BackgroundImage {
-    position:unset;
-    height:20%;
+div.MenuContainer {
+    padding-left:4%;
+    padding-right:4%;
+    width:80%;
+    margin:0px;
+    background:white;
+    border-radius:0px;
+ 
+     
 }
+
+div.MenuItemContainer {
+    background:white;
+    margin-bottom:20px;
+    height:86px;
+
+}
+
+
+
+div.FoodTextContainer {
+    background:white;
+    line-height:28px;
+    padding-left:10px;
+}
+
+div.CourseTitle h2 {
+    font-size:18px;
+}
+
+div.MenuCourse {
+    display:flex;
+    flex-direction:column;
+
+}
+
+@keyframes Translate {
+    from {
+        transform:translateX(0); 
+        transition-duration:2.4s;     
+        color:white;  
+        
+    }
+
+    to {
+        transform:translateX(-9.1%);
+        color:white;
+        
+    }
+}
+
+div.MenuItemContainer:hover {
+    height:86px;
+
+}
+
+div.RestaurantNameContainer h1 {
+    font-size: 30px;
+
+}
+
+button.OrderButton {
+   font-size:18px;
+}
+
 
 }
