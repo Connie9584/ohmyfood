@@ -46,16 +46,20 @@ button {
     color:black;
     padding-left: 20px;
     font-size:17px;
+    height:100%;
 
 }
 
 
-
-div.ohmyfoodlogo {
-    display:flex;
-    justify-content:center;
+div.LogoAndArrowContainer {
     padding-top:8px;
     padding-bottom:8px;
+}
+
+div.ohmyfoodlogoContainer {
+    display:flex;
+    justify-content:center;
+    padding-top:0px;
     box-shadow:10px;
     position:relative;
     width:100%;
@@ -63,7 +67,7 @@ div.ohmyfoodlogo {
 }
 
 
-div.ohmyfoodlogo img{
+div.ohmyfoodlogoContainer img{
     display:flex;
     width:147px;
     height:25.5px;
@@ -826,12 +830,20 @@ div.Loader {
     align-items:center;
     justify-content:center;
     background:rgba(128, 128, 128, 0.861);
-    transition-property: opacity;
-    transition-duration:0.9s;
     visibility:hidden;
     overflow:show;
-    
+    opacity:0;
+    animation-name:FadeOut;
+    animation-duration:2s;
+    animation-iteration-count:1;
+  
 
+}
+
+@keyframes FadeOut {
+    from {opacity:1; visibility:visible;}
+    50% {opacity:0}
+    to {opacity:0}
 }
 
 
@@ -846,7 +858,7 @@ div.Loader {
     border-radius:50%;
     animation-name:Loading;
     animation-duration:0.9s;
-    animation-iteration-count:3;
+    animation-iteration-count:1;
     animation-timing-function: ease;
 
 }
@@ -968,13 +980,29 @@ div#BackArrowContainer {
 }
 
 i.fa-solid.fa-arrow-left {
-    display:none;
+ 
     
 }
 
 div.MenuContainer {
     padding-left:4%;
     padding-right:4%;
+    width:80%;
+     
+}
+
+
+section#BackgroundAndMenu {
+    align-items:center;
+    flex-direction:column;
+    background-color: white;
+    padding-bottom:50px;
+    
+}
+
+div.BackgroundImage {
+    position:unset;
+    height:20%;
 }
 
 }
