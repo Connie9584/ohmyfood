@@ -436,6 +436,7 @@ footer.Footer {
     color:white;
     padding-left:5.5%;
     padding-right:5.5%;
+    padding-bottom:90px;
 }
 
 
@@ -908,8 +909,15 @@ div.Loader {
 }
 
 
-@media screen and (min-width:991px) {
 
+
+
+
+
+
+
+
+@media  screen and ( min-width:769px) and (max-width:1180px) {
 div.ohmyfoodlogoContainer {
     display:flex;
     justify-content:center;
@@ -955,72 +963,107 @@ div.ohmyfoodlogoContainer a {
     position:relative;
 }
 
+div.HowItWorksHeader {
+    display:flex;
+    justify-content:center;
+
+}
+
 h2.HowItWorksHeader  {
     padding-bottom:30px;
     padding-top:30px;
+    margin-bottom:20px;
+    
+
+  
 } 
 
-div.HowItWorksStepsContainer {
-    flex-direction:row;
-    height:min-content;
+div.IconAndText {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 45px;
+    font-size:20px;
+    width:470px;
+    background-color:rgb(246, 246, 246);
+    padding-right:15px;
+
+}
+
+div.HowItWorksHeaderContainer {
+    display:flex;
+    justify-content: center;
+    margin-bottom:40px;
     
 }
 
-div.IconAndText {
-    width:300px;
-    margin-right:15px;
+div.HowItWorksStepsContainer2 {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-bottom:70px;
+
+  
+  
+}
+
+span.NumberCircleContainer {
+    top: -50px;
+    left:unset;
+     
 }
 
 
-div#HowItWorksStepsContainer2 {
-    align-items:unset;
-    position: relative;
 
+section.HowItWorksSection {
+    display:flex;
+    justify-content:center;
+    height:fit-content;
+    flex-direction:column;
 
-  
+    
 }
 
 
 
 section.RestaurantsSection {
-    border-radius:30px;
-    padding-left:40px;
-    padding-right:20px;
+    border-radius:0px;
     padding-bottom:60px;
-    margin-bottom:50px;
+    margin-bottom:0px;
+    margin-top:190px;
+    padding-right:0px;
+    padding-left:4%;
 
 
 }
 
-div.RestaurantsGalleryTextAndHeartContainer {
-    width:100%;
-    font-size:16px;
+div.RestaurantsHeaderContainer {
+    padding-bottom:30px;
+    font-size:18px;
+
+}
+
+div.RestaurantsGallery {
+    margin-bottom:40px;
+    width:46%;
+    margin-right:4%;
+  
 }
 
 div.RestaurantsGalleryContainer {
     flex-direction:row;
-    justify-content:space-between;
- 
-}
-
-div.RestaurantsGallery {
-    width:250px;
-    height:300px;
-    position:sticky;
-    margin-right:20px;
-
-
+    flex-wrap:wrap;
     
+
+
 }
 
-main {
-    padding-left:4%;
-    padding-right:4%;
-}
+
+
 
 div.ExploreSection {
 
-    padding-bottom:30px;
+    padding-bottom:35px;
 
 }
 
@@ -1148,8 +1191,259 @@ button.OrderButton {
 div.CourseTitle::after {
     margin-bottom:18px;
 }
+
 }
+
+
+
+
+
+
+@media screen and (min-width:1181px) {
+
+    div.ohmyfoodlogoContainer {
+        display:flex;
+        justify-content:center;
+        padding-top:18px;
+        padding-bottom:18px;
+        box-shadow:0px 0px;
+        position:relative;
+        width:100%;
+    }
+    
+    div.ohmyfoodlogoHomeContainer {
+        display:flex;
+        justify-content:center;
+    
+        padding-top:26px;
+        padding-bottom:26px;
+        box-shadow:0px 0px;
+        position:relative;
+        width:100%;
+    }
+    
+    
+    
+    
+    div.ohmyfoodlogoContainer img{
+        display:flex;
+        width:176.4px;
+        height:30.6px;
+    
+    }
+    
+    div.ohmyfoodlogoHomeContainer img{
+        display:flex;
+        width:176.4px;
+        height:30.6px;
+    
+    }
+    
+    
+    
+    div.ohmyfoodlogoContainer a {
+        z-index:3;
+        position:relative;
+    }
+    
+    h2.HowItWorksHeader  {
+        padding-bottom:30px;
+        padding-top:30px;
+    } 
+    
+    div.HowItWorksStepsContainer {
+        flex-direction:row;
+        height:min-content;
+        
+    }
+    
+    div.IconAndText {
+        width:300px;
+        margin-right:15px;
+    }
+    
+    
+    
+    
+    div#HowItWorksStepsContainer2 {
+        align-items:unset;
+        position: relative;
+    
+    
+    }
+    
+    
+    
+    section.RestaurantsSection {
+        border-radius:30px;
+        padding-left:40px;
+        padding-right:20px;
+        padding-bottom:60px;
+        margin-bottom:50px;
+    
+    
+    }
+    
+    div.RestaurantsGalleryTextAndHeartContainer {
+        width:100%;
+        font-size:16px;
+    }
+    
+    div.RestaurantsGalleryTextContainer {
+        height:90px;
+        padding-top:10px;
+        line-height:21px;
+    }
+    
+    div.RestaurantsGalleryContainer {
+        flex-direction:row;
+        justify-content:space-between;
+     
+    }
+    
+    div.RestaurantsGallery {
+        width:250px;
+        height:320px;
+        position:sticky;
+        margin-right:20px;
+        
+    }
 
   
 
-
+    main {
+        padding-left:4%;
+        padding-right:4%;
+    }
+    
+    div.ExploreSection {
+    
+        padding-bottom:30px;
+    
+    }
+    
+    div.FooterPTextContainer {
+        height:100px;
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        width:700px;
+        flex-wrap:wrap;
+    
+    }
+    
+    div.FooterInfoContainer {
+        width:250px;
+        
+    }
+    
+    
+    div#BackArrowContainer {
+        width:300px;
+        
+    }
+    
+    i.fa-solid.fa-arrow-left {
+        font-size:30px;
+        display:none;
+        
+    }
+    
+    
+    
+    
+    
+    div.BackgroundImage {
+        position:unset;
+        margin:0px;
+        padding-bottom:0px;
+        height:300px;
+    
+        
+        
+    }
+    
+    div.BackgroundImage img {
+        height:300px;
+        object-fit:cover;
+        margin:0px;
+        padding:0px;
+    
+    }
+    
+    section#BackgroundAndMenu {
+        align-items:center;
+        flex-direction:column;
+        background:white;
+    
+    }
+    
+    div.MenuContainer {
+        padding-left:4%;
+        padding-right:4%;
+        width:80%;
+        margin:0px;
+        background:white;
+        border-radius:0px;
+     
+         
+    }
+    
+    div.MenuItemContainer {
+        background:white;
+        margin-bottom:20px;
+        height:86px;
+    
+    }
+    
+    
+    
+    div.FoodTextContainer {
+        background:white;
+        line-height:28px;
+        padding-left:10px;
+    }
+    
+    div.CourseTitle h2 {
+        font-size:18px;
+    }
+    
+    div.MenuCourse {
+        display:flex;
+        flex-direction:column;
+    
+    }
+    
+    @keyframes Translate {
+        from {
+            transform:translateX(0); 
+            transition-duration:2.4s;     
+            color:white;  
+            
+        }
+    
+        to {
+            transform:translateX(-9.1%);
+            color:white;
+            
+        }
+    }
+    
+    div.MenuItemContainer:hover {
+        height:86px;
+    
+    }
+    
+    div.RestaurantNameContainer h1 {
+        font-size: 30px;
+    
+    }
+    
+    button.OrderButton {
+       font-size:18px;
+    }
+    
+    div.CourseTitle::after {
+        margin-bottom:18px;
+    }
+    }
