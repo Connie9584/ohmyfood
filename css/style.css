@@ -1119,7 +1119,7 @@ div.BackgroundImage img {
 section#BackgroundAndMenu {
     align-items:center;
     flex-direction:column;
-    background:white;
+    background:white; 
 
 }
 
@@ -1128,6 +1128,7 @@ div.MenuContainer {
     padding-right:4%;
     width:80%;
     margin:0px;
+    margin-top:205px;
     background:white;
     border-radius:0px;
  
