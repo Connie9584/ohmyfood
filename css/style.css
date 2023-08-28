@@ -480,7 +480,7 @@ section#BackgroundAndMenu {
 
 div.BackgroundImage {
     width:100%;
-    height:min-content;
+ 
     position:absolute;
     display:flex;
     flex-direction: column;
