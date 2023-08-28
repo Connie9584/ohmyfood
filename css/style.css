@@ -1126,9 +1126,8 @@ section#BackgroundAndMenu {
 div.MenuContainer {
     padding-left:4%;
     padding-right:4%;
-    width:80%;
-    margin:0px;
-    margin-top:205px;
+    margin-top:0px;
+    
     background:white;
     border-radius:0px;
  
