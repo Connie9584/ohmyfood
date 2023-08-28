@@ -482,11 +482,14 @@ div.BackgroundImage {
     width:100%;
     height:min-content;
     position:absolute;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
 
 }
 
 div.BackgroundImage img {
-    object-fit:contain;
+    object-fit:cover;
     height:min-content;
     width:100%;
     padding:0px;
