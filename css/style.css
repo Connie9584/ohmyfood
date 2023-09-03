@@ -596,6 +596,7 @@ div.MenuItemContainer {
     display: flex;
     flex-direction: row;
     position:relative;
+    font-size: 15px;
 }
 
 div.MenuItemContainer {
@@ -793,6 +794,7 @@ div.FoodTitleAndDescriptionContainer:hover {
 div.FoodTitleContainer  {
     overflow-x:hidden;
     text-overflow:ellipsis;
+    white-space:normal;
 
   
 }
